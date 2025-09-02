@@ -1,0 +1,15 @@
+.header-text span {
+  display: inline-block;
+  animation: slide-in 1.3s cubic-bezier(0.19, 1, 0.22, 1);
+  animation-delay: calc(0.03s * var(--index));
+  animation-fill-mode: backwards;
+  white-space: pre;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(100%);
+  } to {
+    transform: translateY(0);
+  }
+}
