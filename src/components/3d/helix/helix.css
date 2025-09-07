@@ -1,0 +1,9 @@
+.helix {
+    animation: helix-spin 10s linear infinite;
+}
+
+@keyframes helix-spin {
+    to {
+        transform: rotateY(-45deg) rotateX(360deg);
+    }
+}

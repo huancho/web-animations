@@ -1,16 +1,10 @@
 .cube-3d {
-    animation: cube-spin 10s linear infinite;
+    animation: cube-spin 14s linear infinite;
 }
 
 @keyframes cube-spin {
-    from {
-        transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
-    }
-    50% {
-        transform: rotateY(-180deg) rotateX(20deg) rotateZ(20deg);
-    }
     to {
-        transform: rotateY(-360deg) rotateX(0deg) rotateZ(0deg);
+        transform: rotateY(360deg) rotateX(360deg);
     }
 }
 

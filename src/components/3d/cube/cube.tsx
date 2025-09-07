@@ -2,8 +2,8 @@ import './cube.css';
 
 export default function Cube() {
   return (
-    <div className="w-17 mt-2">
-      <div className="transform-3d perspective-distant ml-8 relative cube-3d">
+    <div className="w-17">
+      <div className="transform-3d perspective-distant ml-8 relative cube-3d flex items-center h-10 w-10 ">
         <div className="bg-red-200 w-10 h-10 -translate-z-5 absolute" />
         <div className="bg-blue-200 w-10 h-10 translate-z-5 absolute" />
         <div className="bg-green-200 w-10 h-10 rotate-y-90 translate-x-5 absolute" />
