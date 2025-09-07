@@ -1,5 +1,6 @@
 import { TypographyH2 } from '../typography/typography-h2';
 import Planet3D from './3d-planet/3d-planet';
+import Cube from './cube/cube';
 import YingYang from './ying-yang/ying-yang';
 
 export default function Section3D() {
@@ -9,6 +10,7 @@ export default function Section3D() {
       <div className="flex flex-col gap-8 items-start">
         <Planet3D />
         <YingYang />
+        <Cube />
       </div>
     </section>
   );

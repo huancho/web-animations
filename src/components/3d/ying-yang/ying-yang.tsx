@@ -3,7 +3,7 @@ import './ying-yang.css';
 
 export default function YingYang() {
   return (
-    <div className="ml-6 relative">
+    <div className="ml-6 h-14 relative">
       <div className="ying-yang">
         <div className="yin-yang-side bg-foreground" />
       </div>
