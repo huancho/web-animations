@@ -1,4 +1,5 @@
 import { TypographyH2 } from '../typography/typography-h2';
+import ImageReveal from './image-reveal/image-reveal';
 import ImageSlider from './image-slider/image-slider';
 
 export default function ImagesSection() {
@@ -7,6 +8,7 @@ export default function ImagesSection() {
       <TypographyH2>Images</TypographyH2>
       <div className="flex flex-col gap-6 items-start">
         <ImageSlider />
+        <ImageReveal />
       </div>
     </section>
   );
