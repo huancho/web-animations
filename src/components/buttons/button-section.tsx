@@ -1,6 +1,7 @@
 import { TypographyH2 } from '../typography/typography-h2';
 import HoldDeleteButton from './hold-delete-button/hold-delete-button';
 import ScaleButton from './scale-button/scale-button';
+import CopyButton from './copy-button/copy-button';
 
 export default function ButtonSection() {
   return (
@@ -9,6 +10,7 @@ export default function ButtonSection() {
       <div className="flex flex-col gap-6 items-start">
         <ScaleButton />
         <HoldDeleteButton />
+        <CopyButton />
       </div>
     </section>
   );
