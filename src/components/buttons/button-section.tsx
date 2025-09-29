@@ -2,6 +2,7 @@ import { TypographyH2 } from '../typography/typography-h2';
 import HoldDeleteButton from './hold-delete-button/hold-delete-button';
 import ScaleButton from './scale-button/scale-button';
 import CopyButton from './copy-button/copy-button';
+import SendLinkButton from './send-link-button/send-link-button';
 
 export default function ButtonSection() {
   return (
@@ -11,6 +12,7 @@ export default function ButtonSection() {
         <ScaleButton />
         <HoldDeleteButton />
         <CopyButton />
+        <SendLinkButton />
       </div>
     </section>
   );
