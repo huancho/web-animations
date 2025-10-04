@@ -8,7 +8,6 @@ export default function ThemeSwitch() {
   const handleThemeSwitch = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark');
   };
-  console.log(theme);
   return (
     <div className="relative w-full h-40">
       <div

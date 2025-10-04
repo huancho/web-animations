@@ -4,6 +4,7 @@ import Section3D from '@/components/3d/3d-section';
 import ImagesSection from '@/components/images/images-section';
 import NavigationSection from '@/components/navigation/navigation-section';
 import ThemeSection from '@/components/theme/theme-section';
+import TestingSection from '@/components/testing/testing-section';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <ImagesSection />
         <NavigationSection />
         <ThemeSection />
+        <TestingSection />
       </main>
     </>
   );
