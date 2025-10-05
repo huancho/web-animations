@@ -1,5 +1,6 @@
 import { TypographyH2 } from '../typography/typography-h2';
 import BubbleNav from './bubble-nav/bubble-nav';
+import ActiveTabs from './active-tabs/active-tabs';
 
 export default function NavigationSection() {
   return (
@@ -7,6 +8,7 @@ export default function NavigationSection() {
       <TypographyH2>Navigation</TypographyH2>
       <div className="flex flex-col gap-6 items-start">
         <BubbleNav />
+        <ActiveTabs />
       </div>
     </section>
   );
