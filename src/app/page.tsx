@@ -5,6 +5,7 @@ import ImagesSection from '@/components/images/images-section';
 import NavigationSection from '@/components/navigation/navigation-section';
 import ThemeSection from '@/components/theme/theme-section';
 import TestingSection from '@/components/testing/testing-section';
+import ModalsSection from '@/components/modals/modals-section';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Section3D />
         <ImagesSection />
         <NavigationSection />
+        <ModalsSection />
         <ThemeSection />
         <TestingSection />
       </main>
