@@ -6,6 +6,7 @@ import NavigationSection from '@/components/navigation/navigation-section';
 import ThemeSection from '@/components/theme/theme-section';
 import TestingSection from '@/components/testing/testing-section';
 import ModalsSection from '@/components/modals/modals-section';
+import DragSection from '@/components/drag/drag-section';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <NavigationSection />
         <ModalsSection />
         <ThemeSection />
+        <DragSection />
         <TestingSection />
       </main>
     </>
