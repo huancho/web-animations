@@ -76,7 +76,7 @@ export default function ServiceModal() {
               <motion.div
                 layoutId={activeService.title + 'container'}
                 ref={ref}
-                className="relative max-w-lg h-auto bg-[#1c1c1c] p-4 rounded-lg space-y-2"
+                className="relative max-w-lg h-auto bg-[#1c1c1c] p-4 rounded-lg space-y-4 overflow-hidden"
               >
                 <div className="flex items-center gap-4">
                   <motion.img
@@ -113,6 +113,7 @@ export default function ServiceModal() {
                 </div>
 
                 <motion.p
+                layout
                   key={activeService.title + 'longDescription'}
                   className="text-sm text-gray-300"
                   initial={{ opacity: 0 }}
