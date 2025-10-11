@@ -33,7 +33,7 @@ export default function FeedbackButton() {
   };
 
   return (
-    <div className="min-h-40 flex items-center justify-center w-full">
+    <div className="min-h-56 flex items-center justify-center w-full bg-[#1c1c1c] rounded-lg border border-[#2c2c2c]">
       <motion.button
         layoutId="wrapper"
         className="bg-foreground text-background px-3 h-9 cursor-pointer"
@@ -78,7 +78,7 @@ export default function FeedbackButton() {
                 <motion.form
                   key="form"
                   onSubmit={handleSubmit}
-                  className="bg-foreground border border-gray-400 rounded-lg"
+                  className="bg-foreground border border-gray-300 rounded-md"
                   exit={{ y: 8, opacity: 0, filter: 'blur(4px)' }}
                   transition={{ type: 'spring', duration: 0.4, bounce: 0 }}
                 >
@@ -88,16 +88,40 @@ export default function FeedbackButton() {
                     onChange={(e) => setFeedback(e.target.value)}
                     required
                   />
-                  <div className="flex justify-end p-2 border-t border-gray-400 border-dashed">
+                  <div className="flex justify-end p-2 border-t border-gray-300 border-dashed">
                     <motion.button
                       type="submit"
-                      className="flex items-center justify-center bg-blue-500 text-foreground h-6 text-xs font-medium w-24 rounded-lg cursor-pointer hover:bg-blue-600 transition-colors"
+                      className="overflow-hidden flex items-center justify-center bg-blue-500 text-foreground h-6 text-xs font-medium w-24 rounded-md cursor-pointer hover:bg-blue-600 transition-colors"
                     >
-                      {formState === 'loading' ? (
-                        <Loader2 className="animate-spin size-4" />
-                      ) : (
-                        'Send feedback'
-                      )}
+                      <AnimatePresence mode="popLayout">
+                        {formState === 'loading' ? (
+                          <motion.span
+                            key="loading"
+                            initial={{ y: -24, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            transition={{
+                              type: 'spring',
+                              bounce: 0,
+                              duration: 0.3,
+                            }}
+                          >
+                            <Loader2 className="animate-spin size-4" />
+                          </motion.span>
+                        ) : (
+                          <motion.span
+                            key="send"
+                            initial={false}
+                            exit={{ y: 24, opacity: 0 }}
+                            transition={{
+                              type: 'spring',
+                              bounce: 0,
+                              duration: 0.3,
+                            }}
+                          >
+                            Send feedback
+                          </motion.span>
+                        )}
+                      </AnimatePresence>
                     </motion.button>
                   </div>
                 </motion.form>
