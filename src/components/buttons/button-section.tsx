@@ -3,6 +3,7 @@ import HoldDeleteButton from './hold-delete-button/hold-delete-button';
 import ScaleButton from './scale-button/scale-button';
 import CopyButton from './copy-button/copy-button';
 import SendLinkButton from './send-link-button/send-link-button';
+import FeedbackButton from './feedback-button/feedback-button';
 
 export default function ButtonSection() {
   return (
@@ -13,6 +14,7 @@ export default function ButtonSection() {
         <HoldDeleteButton />
         <CopyButton />
         <SendLinkButton />
+        <FeedbackButton />
       </div>
     </section>
   );
